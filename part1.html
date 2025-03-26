@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swasthyam - Your Holistic Wellness Companion</title>
+    <link rel="stylesheet" href="part2.css">
+</head>
+<body>
+    <header>
+        <h1>Swasthyam - Your Holistic Wellness Companion</h1>
+    </header>
+
+    <nav>
+        <a href="#health-profile">Health Profile</a>
+        <a href="#ai-customization">AI Customization</a>
+        <a href="#holistic-wellness">Holistic Wellness</a>
+        <a href="#community">Community</a>
+    </nav>
+
+    <section id="health-profile" class="health-profile">
+        <h2>Smart Health Profile</h2>
+        <div class="input-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight">
+        </div>
+        <div class="input-group">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height">
+        </div>
+        <div class="input-group">
+            <label for="pulse">Pulse Rate (bpm):</label>
+            <input type="number" id="pulse">
+        </div>
+        <div class="input-group">
+            <label for="blood-pressure">Blood Pressure (mmHg):</label>
+            <input type="text" id="blood-pressure">
+        </div>
+        <div class="input-group">
+            <label for="stress-level">Stress Level (1-10):</label>
+            <select id="stress-level">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <button class="button" onclick="updateHealthProfile()">Update Profile</button>
+        <p id="health-profile-display"></p>
+    </section>
+
+    <section id="ai-customization" class="ai-customization">
+        <h2>AI-Powered Customization</h2>
+        <p>This section will dynamically adapt yoga routines and diet plans based on your profile (simulated).</p>
+        <button class="button" onclick="generateCustomPlan()">Generate Custom Plan</button>
+        <p id="custom-plan-display"></p>
+    </section>
+
+    <section id="holistic-wellness" class="holistic-wellness">
+        <h2>Holistic Wellness Features</h2>
+        <p>Guided Meditation and Mindfulness Exercises (placeholders).</p>
+        <button class="button" onclick="startMeditation()">Start Meditation (Simulated)</button>
+        <p id="meditation-display"></p>
+    </section>
+
+    <section id="community" class="community">
+        <h2>Community & Support</h2>
+        <div class="chat-container" id="chat-container"></div>
+        <input type="text" id="chat-input" class="chat-input">
+        <button class="button" onclick="sendMessage()">Send</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Swasthyam. All rights reserved.</p>
+    </footer>
+
+    <script src="part3.js"></script>
+</body>
+</html>
